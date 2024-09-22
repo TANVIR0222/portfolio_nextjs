@@ -31,6 +31,7 @@ const ContactPage = () => {
         }
       );
   };
+  
   return (
     <motion.div
       className="h-full"
@@ -63,7 +64,7 @@ const ContactPage = () => {
           <form
             onSubmit={sendEmail}
             ref={form}
-            className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+            className="h-2/3 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
           >
             <span>Tanvir Islam Dev,</span>
             <textarea
@@ -93,6 +94,7 @@ const ContactPage = () => {
                 Something went wrong!
               </span>
             )}
+            
           </form>
       </div>
     </motion.div>

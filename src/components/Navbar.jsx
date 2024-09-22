@@ -92,22 +92,21 @@ const Navbar = () => {
         <Link href="https://github.com/TANVIR0222">
         <img
         src="https://i.ibb.co.com/7j1HZQw/github.png"
-        className="w-10" 
+        className="w-8" 
         />
         </Link>
-
-
+        {/* linkdi */}
         <Link href="https://www.linkedin.com/in/tanvir-islam-3b7883284/">
         <img
         src="https://i.ibb.co.com/s31HB5p/linkedin.png" 
-        className="w-10" 
+        className="w-8" 
         />
         </Link>
 
         <Link href="https://leetcode.com/u/Tanvir02/">
         <img
         src="https://i.ibb.co.com/1rTg9GT/Leet-Code-Logo-1.png"
-        className="w-12" 
+        className="w-10" 
         />
         </Link>
       </div>
