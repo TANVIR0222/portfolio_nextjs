@@ -1,10 +1,12 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const Homepage = () => {
   return (
+
+    
     <motion.div
       className="h-full"
       initial={{ y: "-200vh" }}
@@ -12,19 +14,19 @@ const Homepage = () => {
       transition={{ duration: 1.5 }}
     >
       <div className="h-full gap-10 flex lg:flex-row flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-        {/* Image  */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative ">
-          <Image
-            className="object-contain fixed h-96 "
-            src="/my_photo.png"
-            alt="hero"
-            fill
-          />
+         {/* Image  */}
+        
+        <div className=" lg:h-full lg:w-1/2 relative ">
+        <img
+        
+      src="https://i.ibb.co.com/MS090bn/photo-2024-07-04-10-03-17-removebg-preview.png"
+      className="max-w-sm rounded-lg shadow-xl mt-28" 
+      />
         </div>
         {/* text Container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-bold sm:mt-14 text-black text-right ">
-            Tanvir Islam
+            Tanvir Islam 
           </h1>
           <h1 className=" my-3 text-2xl md:text-3xl text-left text-black">
             A MERN Stack Developer
@@ -41,12 +43,12 @@ const Homepage = () => {
           {/* buttons */}
           <div className="flex gap-4 mt-5 w-full">
             <Link href={'/portfolio'} >
-              <button class=" rounded-lg p-2 z-10  bg-black border-solid border-2 border-indigo-600  text-white ">
+              <button className=" rounded-lg p-2 z-10  bg-black border-solid border-2 border-indigo-600  text-white ">
                 View My Work
               </button>
             </Link>
             <Link href={"/contact"}>
-              <button class="rounded-lg p-2 z-10 text-black  bg-white border-solid border-2 border-indigo-600   ">
+              <button className="rounded-lg p-2 z-10 text-black  bg-white border-solid border-2 border-indigo-600   ">
                 Contact Me
               </button>
             </Link>

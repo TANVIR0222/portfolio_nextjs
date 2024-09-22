@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.img {
+    width: 100px;
+    height: auto; /* Adjusts height based on the width to maintain aspect ratio */
+  }
+  

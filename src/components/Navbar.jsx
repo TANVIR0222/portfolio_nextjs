@@ -88,17 +88,27 @@ const Navbar = () => {
         </Link>
       </div>
       {/* socal link*/}
-      <div className=" hidden md:flex gap-4 w-1/3 ">
+      <div className=" hidden md:flex gap-12 w-1/3 ">
         <Link href="https://github.com/TANVIR0222">
-          <Image src="/github.png" alt="alt" width={24} height={24} />
+        <img
+        src="https://i.ibb.co.com/7j1HZQw/github.png"
+        className="w-10" 
+        />
         </Link>
 
-        
-        <Link href="https://leetcode.com/u/Tanvir02/">
-          <Image  src="/leetcode.png" alt="alt" width={90} height={90} />
-        </Link>
+
         <Link href="https://www.linkedin.com/in/tanvir-islam-3b7883284/">
-          <Image src="/linkedin.png" alt="alt" width={24} height={24} />
+        <img
+        src="https://i.ibb.co.com/s31HB5p/linkedin.png" 
+        className="w-10" 
+        />
+        </Link>
+
+        <Link href="https://leetcode.com/u/Tanvir02/">
+        <img
+        src="https://i.ibb.co.com/1rTg9GT/Leet-Code-Logo-1.png"
+        className="w-12" 
+        />
         </Link>
       </div>
       {/* menu item */}
