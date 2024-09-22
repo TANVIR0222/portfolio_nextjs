@@ -11,18 +11,18 @@ const PortfolioPage = () => {
     {
       id: 1,
       color: "from-red-300 to-blue-300",
-      title: "React Commerce",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      title: "Coffee Shop Website",
+      desc: "Complete Responsive Coffee Shop Website Using ReactJS, Tailwind CSS & Framer Motion",
+      img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link: "https://coffee-shop-next-gamma.vercel.app/",
     },
     {
       id: 2,
       color: "from-blue-300 to-violet-300",
-      title: "Next.js Medium Blog",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      title: "Next.js Modern Restaurant Website",
+      desc: "Modern Restaurant Website Template (ReactJS + Tailwind + Framer motion",
+      img: "https://ibb.co.com/hLKxC5f",
+      link: "https://food-ecommerce-rose.vercel.app/",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const PortfolioPage = () => {
       title: "Vanilla Book App",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
       img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      link: "https://coffee-shop-next-gamma.vercel.app/",
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const PortfolioPage = () => {
       title: "Spotify Music App",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
       img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      link: "https://lama.dev",
+      link: "https://coffee-shop-next-gamma.vercel.app/",
     },
   ];
   return (
@@ -49,7 +49,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1.5 }}
     >
       <div className="h-[600vh] relative " ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] items-center justify-center flex text-8xl text-black text-center ">
+        <div className="w-screen h-[calc(100vh-6rem)]  items-center justify-center flex text-8xl text-black text-center ">
           My Work
             <motion.svg
             className={'ml-16'}
@@ -84,12 +84,11 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color} `}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white ">
-                  <h1 className="text-xl font-semibold md:text-4xl  lg:text-8xl  xl:text-6xl ">
+                <div className="flex flex-col gap-8  mt-20 text-white ">
+                  <h1 className="text-xl font-semibold md:text-3xl  lg:text-5xl  xl:text-4xl ">
                     {item.title}
                   </h1>
                   <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    {/* <Image src={item.img} alt="alt" width={500} height={500}  /> */}
                     <Image
                       src={item.img}
                       alt="parject"
@@ -124,7 +123,7 @@ const PortfolioPage = () => {
               ></path>
             </motion.svg>
                   <Link href={item.link} className="flex justify-end ">
-                    <button className="text-sm bg-white p-2 md-p-4 md:text-md lg:p-8 lg:text-lg  text-gray-600 font-semibold m-4 rounded ">
+                    <button className="text-sm bg-white p-2 md-p-4 md:text-md lg:p-8 lg:text-lg  text-gray-600 font-semibold m-4 rounded  -mt-7">
                       See Demo
                     </button>{" "}
                   </Link>
